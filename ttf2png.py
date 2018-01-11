@@ -20,12 +20,12 @@ for d in [TEXTS_DIR, IMAGES_DIR]:
 
 for x in ttf["cmap"].tables:
     for y in x.cmap.items():
-        char_unicode = unichr(y[0])
-        char_utf8 = char_unicode.encode('utf_8')
-        char_name = y[1]
-        f = open(os.path.join(TEXTS_DIR, char_name + '.txt'), 'w')
-        f.write(char_utf8)
-        f.close()
+        if 'uniAC00' <= y[1] and y[1] <= 'uniD7A3':
+            char_unicode = chr(y[0])
+            char_name = y[1]
+            f = open(os.path.join(TEXTS_DIR, char_name + '.txt'), 'w')
+            f.write(char_unicode)
+            f.close()
 ttf.close()
 
 files = os.listdir(TEXTS_DIR)
