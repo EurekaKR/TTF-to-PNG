@@ -1,11 +1,11 @@
-TTF-to-PNG
-==========
+TTF-to-PNG for Korean
+=====================
 
 A PNG letter generator for icon fonts.
 
 ## What
 
-You can extract `.png` files of all letters from a `.ttf` font file. It is useful to obtain icon images from an icon font.
+You can extract `.png` files of korean letters from a `.ttf` font file. It is useful to obtain icon images from an icon font.
 
 ## Installation
 
@@ -25,9 +25,9 @@ There are a lot of ways for installation.
 
 	pip install fonttools
 
-### TTF-to-PNG
+### TTF-to-PNG for Korean
 
-    git clone https://github.com/sl2/TTF-to-PNG.git
+    git clone https://github.com/JimJeon/TTF-to-PNG.git
 
 ## Usage
 
@@ -55,7 +55,7 @@ There are a lot of ways for installation.
 ## Environment
 
 - OSX : 10.10
-- Python : 2.7.8
+- Python : 3.6.2
 	- It may work on other version's OSX or Python.
 
 ## License
