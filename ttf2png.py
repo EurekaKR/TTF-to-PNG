@@ -6,7 +6,7 @@ import subprocess
 from fontTools.ttLib import TTFont
 
 TEXTS_DIR = "texts"
-IMAGES_DIR = "images"
+IMAGES_DIR = "fonts"
 
 TTF_PATH = sys.argv[1]
 FONT_SIZE = sys.argv[2]
@@ -33,6 +33,6 @@ for filename in files:
     name, ext = os.path.splitext(filename)
     input_txt = TEXTS_DIR + "/" + filename
     output_png = IMAGES_DIR + "/" + TTF_NAME + "_" + name + "_" + FONT_SIZE + ".png"
-    subprocess.call(["convert", "-font", TTF_PATH, "-pointsize", FONT_SIZE, "-background", "rgba(0,0,0,0)", "label:@" + input_txt, output_png])
+    subprocess.call(["convert", "-size", "75x75", "-font", TTF_PATH, "-pointsize", FONT_SIZE, "-background", "rgba(0,0,0,0)", "label:@" + input_txt, output_png])
 
 print("finished")
