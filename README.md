@@ -21,6 +21,14 @@ There are a lot of ways for installation.
 
 	- [ImageMagick installer for Mac OS X](http://cactuslab.com/imagemagick/)
 
+- Debian based Linux  
+```
+	apt-get install imagemagick
+```
+- RHEL based Linux  
+```
+	yum install ImageMagick
+```
 ### FontTools
 
 	pip install fonttools
@@ -54,7 +62,7 @@ There are a lot of ways for installation.
 
 ## Environment
 
-- OSX : 10.10
+- OSX : 10.10 (Any OS that can use imagemagick)
 - Python : 3.6.2
 	- It may work on other version's OSX or Python.
 
